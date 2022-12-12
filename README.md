@@ -2,12 +2,8 @@
     <br>
     <h3><b>Smbt-Userbot</b></h>
     <br>
-    <a href='https://github.com/'>
+    <a href='https://github.com/Makes3223/Smbt-User-Bot#installation'>
         Installation
-    </a>
-    •
-    <a href="https://github.com/">
-        Releases
     </a>
 </p>
 
@@ -33,12 +29,14 @@ The developers are not responsible for any consequences you may encounter when u
 
 <h2>Linux, Termux (use <a href='https://f-droid.org/en/packages/com.termux/'>f-droid</a> version) and Windows [only wsl]</h2>
 
-<pre><code>apt-get upgrade -y && apt-get update && apt install git && git clone 
+<pre><code>apt-get upgrade -y && apt-get update && apt install git && git clone https://github.com/Makes3223/Smbt-User-Bot.git
 </code></pre>
 
 First launch:
 
 <pre><code>cd Smbt-User Bot</code></pre>
+
+<pre><code>pip3 -r install requirements.txt</code></pre>
 
 <pre><code>python3 install.py</code></pre>
 
