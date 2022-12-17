@@ -1,4 +1,3 @@
-import os
 import asyncio
 
 from pyrogram import Client, filters
@@ -9,11 +8,11 @@ from core_v1.modul import prefixes, app, modules_help
 async def stupid(client: Client, message: Message):
     animation_interval = 0.5
     animation_ttl = range(0, 14)
-    await message.edit_text("<b>i love you</b>")
+    await message.edit_text("<b>Я тебе люблю</b>")
     text1 = [
         "<b>Good night bunny 💚</b>", 
         "<b>Good night sunshine 💛</b>",
-        "<b>Goodnight kitten ❤</b>",
+        "<b>Goodnight kitten 💕</b>",
         "<b>Good night flower 💙</b>",
         "<b>Good night little angel 💜</b>",
         "<b>Good night princess 💓</b>",
