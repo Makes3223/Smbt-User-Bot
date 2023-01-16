@@ -3,7 +3,9 @@ import sys
 import asyncio
 import subprocess
 import importlib
+import traceback
 
+from pyrogram.types import Message
 from pyrogram import Client, errors, types
 from core_v1.modul import modules_help, prefixes, app, requirements_list
 
@@ -118,3 +120,11 @@ def import_library(library_name: str, package_name: str = None):
                 f"Failed to install library {package_name} (pip exited with code {completed.returncode})"
             )
         return importlib.import_module(library_name)
+
+async def edit_or_reply(message: Message, *args, **kwargs) -> Message:
+    apa = (
+        message.edit_text
+        if bool(message.from_user and message.from_user.is_self or message.outgoing)
+        else (message.reply_to_message or message).reply_text
+    )
+    return await apa(*args, **kwargs)

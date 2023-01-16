@@ -16,21 +16,25 @@ from moduls import url
 from moduls import spam
 from moduls import leave_chat
 
-from moduls.animation import manul
-from moduls.animation import like
-
+#moduls.random_animation
 from moduls.random_animation import football
 from moduls.random_animation import hunter
 
+#moduls.love
 from moduls.love import night
 from moduls.love import hearts
 from moduls.love import hearet
 from moduls.love import night 
 from moduls.love import haert
 
+#moduls.fliptext
 from moduls.fliptext import fliptext2
 from moduls.fliptext import fliptext
 
+#moduls.animation
+from moduls.animation import koc
+from moduls.animation import manul
+from moduls.animation import like
 from moduls.animation import think
 from moduls.animation import stupid
 from moduls.animation import stars
