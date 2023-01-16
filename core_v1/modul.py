@@ -1,6 +1,6 @@
 from pyrogram import Client, errors, types, filters
 
-prefixes = (".", "/", "!")
+prefixes = [".", "/", "!"]
 
 app = Client("my_account")
 
