@@ -2,7 +2,7 @@ from pyrogram import Client, errors, types, filters
 from sys import version_info
 from pyrogram import enums
 
-prefixes = [".", "/", "!"]
+prefixes = [".", "!"]
 
 app = Client("my_account")
 
