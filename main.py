@@ -10,12 +10,12 @@ print('''
 print("Loading")
 
 from pyrogram import Client, filters
-from core_v1.modul import prefixes, app
-from core_v1.modul import modules_help
-from core_v1 import helpp
+from core.modul import prefixes, app
+from core.modul import modules_help
+from core import helpp
 
-from core_v1 import loader as loader
-from core_v1 import load_scripts as load_scripts
+from core import loader as loader
+from core import load_scripts as load_scripts
 
 
 print("-" * 19)

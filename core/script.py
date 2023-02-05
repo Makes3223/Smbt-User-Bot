@@ -7,7 +7,7 @@ import traceback
 
 from pyrogram.types import Message
 from pyrogram import Client, errors, types
-from core_v1.modul import modules_help, prefixes, requirements_list, app
+from core.modul import modules_help, prefixes, requirements_list, app
 
 
 def format_exc(e: Exception, hint: str = None):

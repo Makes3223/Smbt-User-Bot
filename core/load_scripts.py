@@ -6,8 +6,8 @@ from importlib import import_module
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from core_v1.script import restart
-from core_v1.modul import modules_help, prefixes, app
+from core.script import restart
+from core.modul import modules_help, prefixes, app
 
 
 BASE_PATH = os.path.abspath(os.getcwd())

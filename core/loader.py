@@ -5,7 +5,7 @@ import requests
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from core_v1.modul import modules_help, prefixes, app
+from core.modul import modules_help, prefixes, app
 
 
 BASE_PATH = os.path.abspath(os.getcwd())

@@ -1,8 +1,8 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from core_v1.modul import modules_help, prefixes, app
-from core_v1.script import format_module_help
+from core.modul import modules_help, prefixes, app
+from core.script import format_module_help
 
 
 @app.on_message(filters.command(["help", "h"], prefixes) & filters.me)
