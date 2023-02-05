@@ -9,9 +9,13 @@ from pyrogram.types import Message
 from core_v1.script import restart
 from core_v1.modul import modules_help, prefixes, app
 
+
 BASE_PATH = os.path.abspath(os.getcwd())
 SCRIPT_DIRECTORY = os.path.join(f"{BASE_PATH}/scripts")
 loaded_modules = {}
+
+if not os.path.exists(SCRIPT_DIRECTORY):
+    os.makedirs(SCRIPT_DIRECTORY)
 
 modules = []
 if os.path.exists("loaded_modules.txt"):

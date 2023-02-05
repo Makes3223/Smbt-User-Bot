@@ -1,4 +1,4 @@
-if [[ -d "core_v1" ]] && [[ -f "main.py" ]] && [[ -d "moduls" ]]; then
+if [[ -d "core_v1" ]] && [[ -f "main.py" ]] && [[ -f "install.py" ]] && [[ -f "requirements.txt" ]]; then
   echo "all file are download"
 else
   echo "Please download some files"  || exit 2

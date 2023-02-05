@@ -1,9 +1,12 @@
 from pyrogram import Client, errors, types, filters
+from sys import version_info
+from pyrogram import enums
 
 prefixes = [".", "/", "!"]
 
 app = Client("my_account")
 
+parse_mode=enums.ParseMode.HTML
 
 class ModulesHelpDict(dict):
     def append(self, obj: dict):
@@ -21,3 +24,5 @@ class ModulesHelpDict(dict):
 modules_help = ModulesHelpDict()
 
 requirements_list = []
+
+python_version = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"

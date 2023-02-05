@@ -7,7 +7,7 @@ import traceback
 
 from pyrogram.types import Message
 from pyrogram import Client, errors, types
-from core_v1.modul import modules_help, prefixes, app, requirements_list
+from core_v1.modul import modules_help, prefixes, requirements_list, app
 
 
 def format_exc(e: Exception, hint: str = None):
@@ -80,7 +80,7 @@ async def interact_with(message: types.Message) -> types.Message:
 
     await asyncio.sleep(1)
     # noinspection PyProtectedMember
-    response = await message._client.get_history(message.chat.id, limit=1)
+    response = await message._client.get_chat_history(message.chat.id, limit=1)
     seconds_waiting = 0
 
     while response[0].from_user.is_self:
@@ -90,7 +90,7 @@ async def interact_with(message: types.Message) -> types.Message:
 
         await asyncio.sleep(1)
         # noinspection PyProtectedMember
-        response = await message._client.get_history(message.chat.id, limit=1)
+        response = await message._client.get_chat_history(message.chat.id, limit=1)
 
     interact_with_to_delete.append(message.message_id)
     interact_with_to_delete.append(response[0].message_id)
